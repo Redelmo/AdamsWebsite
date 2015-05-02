@@ -1,10 +1,30 @@
-//$(function swoop() {
-//	alert("test");
-//	});
+//$(function() {
+//    $('html').click(function() {
 
-$(function swoop() {
-    $('#button1').click(function () {
-        $('imageOne').attr('src','http://vignette2.wikia.nocookie.net/mlp-gameloft/images/6/6a/Fluttershy_Vector.png/revision/latest?cb=20141214215316' )
-    })
-        
-	});
+//    });
+
+//});
+
+//$(document).ready(function () {
+//    $('#tipue_search_input').tipuesearch();
+//});
+
+$.fn.isOnScreen = function () {
+    var viewport = {};
+    viewport.top = $(window).scrollTop();
+    viewport.bottom = viewport.top + $(window).height();
+    var bounds = {};
+    bounds.top = this.offset().top;
+    bounds.bottom = bounds.top + this.outerHeight();
+    return ((bounds.top <= viewport.bottom) && (bounds.bottom >= viewport.top));
+};
+
+//$.fn.isOnScreen = function () {
+//    var element = this.get(0);
+//    var bounds = element.getBoundingClientRect();
+//    return bounds.top < window.innerHeight && bounds.bottom > 0;
+//}
+
+if ($('.navbar').isOnScreen > 0) {
+    alert('test');
+}

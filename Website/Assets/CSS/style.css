@@ -1,12 +1,12 @@
 body {
     padding: 0 100px;
-    background-color: black;
+    background-color: #2b3a44;
 }
 
 .pageContent {
     height: 100%;
     max-width: 1600px;
-    background-color: white;
+    background-color: #2b453c;
     /*padding-left: 0;*/
     /*border-left: 40px solid #3d4f0c;*/
 }
@@ -27,21 +27,26 @@ body {
     padding: 0 0 0 10px;
 }
 
+.navbar {
+    margin-bottom: 0;
+    z-index: 100;
+}
+
 .navbar .dropdown-menu {
     width: 100%;
     position: absolute;
-    left: 100px;
     right: 100px;
 }
 
 #navigationContainer {
-    background-color: green;
+    background-color: #452b34;
     height: inherit;
     position: fixed;
-    width: 45px;
-    position: fixed;
+    width: 42px;
     transform: translate(-33%, 0);
-    z-index: 1500;
+    top: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .mt15 {
@@ -50,11 +55,11 @@ body {
 /* Navigation */
 #navigationMenu {
     position: fixed;
-    /*left: 0;*/
+
     top: 50%;
     z-index: 1500;
     bottom: auto;
- transform: translate(-36%, -50%);
+ transform: translate(-34%, -50%);
 }
 
 *{
@@ -73,7 +78,7 @@ body {
 #navigationMenu span{
 	/* Container properties */
 	width:0;
-	left:38px;
+	right:38px;
 	padding:0;
 	position:absolute;
 	overflow:hidden;
